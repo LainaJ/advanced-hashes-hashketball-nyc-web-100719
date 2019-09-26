@@ -274,9 +274,13 @@ end
 #data is Brooklyn Nets
 #data is also player stats Ex :player_name , :number, :shoe
 def player_with_longest_name
+  longest_length = 0 
+  
   game_hash.each do |place, team|
     team[:players].each do |player|
     nameLength = player[:player_name].length
+    if nameLength > longest_length
+      longest_length = nameLength
     binding.pry
     end
   end
