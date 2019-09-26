@@ -275,12 +275,14 @@ end
 #data is also player stats Ex :player_name , :number, :shoe
 def player_with_longest_name
   longest_length = 0
+  playerWithLongestName = ""
 
   game_hash.each do |place, team|
     team[:players].each do |player|
     nameLength = player[:player_name].length
     if nameLength > longest_length
       longest_length = nameLength
+      playerWithLongestName = player[:player_name]
     binding.pry
       end 
     end
