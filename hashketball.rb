@@ -284,7 +284,7 @@ def player_with_longest_name
       longest_length = nameLength
       playerWithLongestName = player[:player_name]
     binding.pry
-      end 
+      end
     end
   end
 end
