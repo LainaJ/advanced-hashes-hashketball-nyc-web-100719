@@ -277,6 +277,7 @@ def player_with_longest_name
   game_hash.each do |place, team|
     team[:players].each do |player|
     nameLength = player[:player_name].length
+    binding.pry
     end
   end
 end
