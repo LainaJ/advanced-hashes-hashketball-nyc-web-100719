@@ -282,6 +282,7 @@ def player_with_longest_name
     if nameLength > longest_length
       longest_length = nameLength
     binding.pry
+      end 
     end
   end
 end
