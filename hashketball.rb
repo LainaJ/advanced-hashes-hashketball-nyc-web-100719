@@ -283,10 +283,10 @@ def player_with_longest_name
     if nameLength > longest_length
       longest_length = nameLength
       playerWithLongestName = player[:player_name]
-    binding.pry
       end
     end
   end
+  playerWithLongestName 
 end
 
 def long_name_steals_a_ton?
