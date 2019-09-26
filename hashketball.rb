@@ -295,21 +295,21 @@ end
 
 #practice for super bonus
 def most_steals
-  most_steals = 0
+  mostSteals = 0
   playerWithMostSteals = ""
 
   game_hash.each do |place, team|
     team.each do |attribute, data|
       if attribute == :players
-        data.each do |player_statistics|
-          numPoints = player_statistics[:points]
-            if numPoints > most_points
-              most_points = numPoints
-              playerWiththeMost = player_statistics[:player_name]
+        data.each do |player|
+          numSteals = player[:steals]
+            if numSteals > mostSteals
+              mostSteals= numSteals
+              playerWithMostSteals = player[:player_name]
           end
         end
       end
     end
   end
-  playerWiththeMost
+  playerWithMostSteals
 end
