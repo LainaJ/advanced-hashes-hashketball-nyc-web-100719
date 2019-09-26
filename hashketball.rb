@@ -289,10 +289,6 @@ def player_with_longest_name
   playerWithLongestName
 end
 
-def long_name_steals_a_ton?
-  #did not solve
-end
-
 #practice for super bonus
 def most_steals
   mostSteals = 0
@@ -312,4 +308,11 @@ def most_steals
     end
   end
   playerWithMostSteals
+end
+
+def long_name_steals_a_ton?
+  if playerWithLongestName == playerWithMostSteals
+    true
+  else
+    false
 end
