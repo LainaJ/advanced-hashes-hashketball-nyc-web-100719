@@ -292,3 +292,24 @@ end
 def long_name_steals_a_ton?
   #did not solve
 end
+
+#practice for super bonus
+def most_steals
+  most_steals = 0
+  playerWithMostSteals = ""
+
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player_statistics|
+          numPoints = player_statistics[:points]
+            if numPoints > most_points
+              most_points = numPoints
+              playerWiththeMost = player_statistics[:player_name]
+          end
+        end
+      end
+    end
+  end
+  playerWiththeMost
+end
